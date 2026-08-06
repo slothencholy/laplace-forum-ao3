@@ -14,7 +14,7 @@
 .background {
   /* wraps entire page with textured laplace bg */
   margin: 0;
-  background-image: url("https://64.media.tumblr.com/3150b80e3d5148eaec35d33dff2986e1/9def2d7264a47c04-dc/s1280x1920/cbfc1909319a6baa911c541655c2845d29d6c99c.jpg");
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/background.jpg");
   background-repeat: repeat-y;
   background-size: 100%;
   padding: 0px 20px;
@@ -36,7 +36,7 @@ displays elements within the flex display
 .post {
   display: flex;
   position: relative;
-  background-image: url("https://64.media.tumblr.com/373f0697324da504b4a112f81bc19eef/d7977cb57ceed6c4-e0/s1280x1920/827937db769372171c69e255a5ea59ddea38b329.pnj");
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/main-bg.png");
   background-repeat: repeat-y;
   background-size: 100%;
   padding-left: 5.5%;
@@ -59,7 +59,7 @@ title: for title of a single post. sets up main post after.
 */
 .title:before {
   content: "";
-  background:url('https://64.media.tumblr.com/a8fbc5d5daa1124d712c74f2e88768a7/d7977cb57ceed6c4-45/s1280x1920/a57446df835674113866d1f642a857d65e99b756.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/title-top.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -76,7 +76,7 @@ title: for title of a single post. sets up main post after.
   color: #000000;
   position:relative;
 
-  background-image: url("https://64.media.tumblr.com/ecd799464cb1849e1040e7c955f3f81b/b215ec83ee93ed4e-ae/s1280x1920/a419af596f874d902ef7d22e26921be7208dfb31.pnj");
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/title-bg.png");
   background-repeat: repeat-y;
   background-size: 100%;
   margin-bottom: 158px;
@@ -84,7 +84,7 @@ title: for title of a single post. sets up main post after.
 
 .title:after {
   content: "";
-  background:url('https://64.media.tumblr.com/2f350b8b9a5315901a4e36843cde0ddb/60b397ce054de56b-19/s1280x1920/91d2eb01e7de4435aa9a67e8c6cca33cf873765e.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/title-bottom.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -104,7 +104,7 @@ For the main post on the forum. no :before element as it's handled by user secti
 
 .mainpost:after {
   content: "";
-  background:url('https://64.media.tumblr.com/e80573500ca41dd971def22b8c380a9a/d7977cb57ceed6c4-9e/s1280x1920/6b48ead7ef9f62a852490bdd4b93fc6a5b55a5a5.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/main-reply.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -130,7 +130,7 @@ Goes before each.
 */
 .usersection {
   content: "";
-  background:url('https://64.media.tumblr.com/53a84154a91c79bb80f7f4bbf59e3723/d7977cb57ceed6c4-4f/s1280x1920/96eea7bc6b0ed438705cf334a9edc3ec242c3faf.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/post-top.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -141,7 +141,7 @@ Goes before each.
 }
 .userreply {
   content: "";
-  background:url('https://64.media.tumblr.com/2fb7fc5020c30d0ad527d89db4f99b5e/6737c660f637420c-7c/s1280x1920/810faf92cca3beeb653446c4e5dcd3039d0e2cb2.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-user.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -156,7 +156,7 @@ Goes before each.
 
 .firstreply {
   margin-top: 115px;
-  background:url('https://64.media.tumblr.com/9282124dd289d288842b778aa5c42e0e/d7977cb57ceed6c4-7e/s1280x1920/61d280ba41a75e62b2725bade7f959c5b9c69be0.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-reply.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -167,7 +167,6 @@ Indents the avatar, username, and tag correctly within the section
 .userindent {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
   padding-left: 7%;
 }
 .userinfo {
@@ -190,9 +189,10 @@ Indents the avatar, username, and tag correctly within the section
 
 /* 
 A thread of replies. Contains all replies within.
+bg img was causing weird visual splicing from improper margin spacing
 */
 .thread {
-  /* background-image: url("https://64.media.tumblr.com/373f0697324da504b4a112f81bc19eef/d7977cb57ceed6c4-e0/s1280x1920/827937db769372171c69e255a5ea59ddea38b329.pnj"); */
+  /* background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-bg.png"); */
   background-repeat: repeat-y;
   background-size: 100%;
   margin-bottom: 150px;
@@ -202,7 +202,7 @@ A thread of replies. Contains all replies within.
 }
 .firstthread:after {
   content: "";
-  background:url('https://64.media.tumblr.com/5f0998e24721e0e39d244552ebc51b67/d7977cb57ceed6c4-70/s1280x1920/a83148592212380c3dc5be813c69b6294a89c6d6.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-reply.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -210,17 +210,16 @@ A thread of replies. Contains all replies within.
   position: absolute;
   left:0;
   top: 100%;
-  pointer-events: none;
 }
 
 .reply {
-  background:url('https://64.media.tumblr.com/f559e3eafe4268728b678b5d7556df54/6737c660f637420c-79/s1280x1920/a6127fb987be99d073ed2720380a7fbffa7072a0.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-bg.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .reply:after{
   content: "";
-  background:url('https://64.media.tumblr.com/a03d3d4aae70269d24796476ce4a53cf/d7977cb57ceed6c4-a3/s1280x1920/021d2212954ac1f21dd5e88bacd1b7b38402d6da.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-separator.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -236,13 +235,13 @@ A thread of replies. Contains all replies within.
 }
 
 .lastreply {
-  background:url('https://64.media.tumblr.com/2fb7fc5020c30d0ad527d89db4f99b5e/6737c660f637420c-7c/s1280x1920/810faf92cca3beeb653446c4e5dcd3039d0e2cb2.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-bg.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .lastreply:after{
   content: "";
-  background:url('https://64.media.tumblr.com/86324546455be182ddefa1ce24a02163/d7977cb57ceed6c4-34/s1280x1920/6ce475f234adcb52a847747b73b62f700feff895.pnj');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-end.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
