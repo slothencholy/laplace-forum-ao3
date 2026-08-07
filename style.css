@@ -58,7 +58,7 @@ displays elements within the flex display
 .breadcrumb {
   /* displays link before page */
   padding: 20px 2%;
-  color: #634204;
+  color: rgb(116, 33, 0);
   margin-bottom: 30px;
   font-size: 18px;
 }
@@ -280,19 +280,18 @@ bg img was causing weird visual splicing from improper margin spacing
 .sidehead {
   padding: 0px;
   padding-left: 2%;
-  color: #634204;
+  color: rgb(116, 33, 0);
   font-size: 18px;
 }
 
 /* each individual 'hot topic' */
 .topic {
-  padding: 0 10px 20px 5%;
-  border: 1px solid #4e4e4e;
-  border-bottom: 2px solid #000000;
-  border-right: 2px solid #000000;
-  border-style: outset;
-  margin: 5px;
+  padding: 10px 30px 30px 30px;
+  margin-bottom: 10px;
   text-align: right;
+  color: black;
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/decorative/hot-topic.jpg");
+  background-size: 100% 100%;
 }
 
 .footer {
