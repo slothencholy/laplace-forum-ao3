@@ -44,6 +44,7 @@ displays elements within the flex display
 .post {
   display: flex;
   position: relative;
+  min-width: 0;
   background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/main-bg.png");
   background-repeat: repeat-y;
   background-size: 100%;
@@ -51,8 +52,9 @@ displays elements within the flex display
   padding-right: 1%;
 }
 .body {
-  flex: 1;
-  position:relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  position: relative;
 }
 
 .breadcrumb {
@@ -127,7 +129,8 @@ For the main post on the forum. no :before element as it's handled by user secti
 .innerbody {
   padding-left: 2%;
   padding-right: 4%;
-  padding-top: -1px;
+  overflow-wrap: break-word;
+  padding-top: 0px;
   font-size: 18px;
   color: rgb(71, 71, 71);
 }
@@ -187,7 +190,7 @@ Indents the avatar, username, and tag correctly within the section
   color: rgb(63, 63, 63);
 }
 .username {
-  font-size: 20px;
+  font-size: 16px;
 }
 .avatar {
   float: left;
