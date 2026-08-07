@@ -52,7 +52,7 @@ At the very end, that sidebar needs to be inserted:
 This will add the fancy little icons on the side of the forum screen. The login button, the hot topics section, a 
 logo, some funny looking buttons, and some official-looking text at the bottom of the screen. Speaking of, I got
 too lazy to code that hot topics section, so it's entirely an image. If you want to make your own, you'll need to
-bust out an image editing program. The (image file with layers)[/decorative/hot-topics.clip] should help.
+bust out an image editing program. The [image file with layers](/decorative/hot-topics.psd) should help.
 
 That's basically all the fluff. Once all this is done, the basic layout of the forum is completed, and we're
 ready to add actual posts and threads.
