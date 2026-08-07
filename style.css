@@ -1,6 +1,3 @@
-.body {
-  margin: 0;
-}
 .blank {
   /* gets rid of annoying ao3 whitespace */
   padding: 0;
@@ -11,6 +8,9 @@
   /* used for header, should replace with background:before */
   width: 100%;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 .background {
   /* wraps entire page with textured laplace bg */
   margin: 0;
@@ -18,16 +18,24 @@
   background-repeat: repeat-y;
   background-size: 100%;
   padding: 0px 20px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .image {
-  /* sets image to take up entire flex container. 100 sets to screen for some reason */
-  width: 99%;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .main {
-  /* sets up flex display */
   display: grid;
   grid-template-columns: 1fr 30%;
+}
+
+.main > * {
+  min-width: 0;
 }
 
 /* 
@@ -40,6 +48,7 @@ displays elements within the flex display
   background-repeat: repeat-y;
   background-size: 100%;
   padding-left: 5.5%;
+  padding-right: 1%;
 }
 .body {
   flex: 1;
@@ -51,7 +60,7 @@ displays elements within the flex display
   padding: 20px 2%;
   color: #a85b14;
   margin-bottom: 30px;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 /*
@@ -72,7 +81,7 @@ title: for title of a single post. sets up main post after.
 .title {
   padding-left: 4%;
   padding-right: 4%;
-  font-size: 3vw;
+  font-size: 2vw;
   color: #000000;
   position:relative;
 
@@ -119,7 +128,7 @@ For the main post on the forum. no :before element as it's handled by user secti
   padding-left: 2%;
   padding-right: 4%;
   padding-top: -1px;
-  font-size: 2vw;
+  font-size: 1vw;
   color: rgb(71, 71, 71);
 }
 
@@ -186,6 +195,11 @@ Indents the avatar, username, and tag correctly within the section
   height: 50px;
   border-radius: 8px;
 }
+p {
+    margin: 0;
+    padding: 0;
+    flex: 0 0 auto;
+}
 
 /* 
 A thread of replies. Contains all replies within.
@@ -227,7 +241,6 @@ bg img was causing weird visual splicing from improper margin spacing
   position: absolute;
   left:0;
   top: 100%;
-  pointer-events: none;
 }
 
 .bodyreply {
@@ -249,7 +262,6 @@ bg img was causing weird visual splicing from improper margin spacing
   position: absolute;
   left:0;
   top: 100%;
-  pointer-events: none;
 }
 
 /*  */
@@ -269,7 +281,7 @@ bg img was causing weird visual splicing from improper margin spacing
   padding: 0px;
   padding-left: 2%;
   color: #a85b14;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 /* each individual 'hot topic' */
