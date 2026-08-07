@@ -9,7 +9,7 @@
   width: 100%;
 }
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .background {
   /* wraps entire page with textured laplace bg */
@@ -18,15 +18,15 @@
   background-repeat: repeat-y;
   background-size: 100%;
   padding: 0px 20px;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .image {
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .main {
@@ -58,9 +58,9 @@ displays elements within the flex display
 .breadcrumb {
   /* displays link before page */
   padding: 20px 2%;
-  color: #a85b14;
+  color: #634204;
   margin-bottom: 30px;
-  font-size: 1vw;
+  font-size: 18px;
 }
 
 /*
@@ -81,7 +81,7 @@ title: for title of a single post. sets up main post after.
 .title {
   padding-left: 4%;
   padding-right: 4%;
-  font-size: 2vw;
+  font-size: 22px;
   color: #000000;
   position:relative;
 
@@ -128,7 +128,7 @@ For the main post on the forum. no :before element as it's handled by user secti
   padding-left: 2%;
   padding-right: 4%;
   padding-top: -1px;
-  font-size: 1vw;
+  font-size: 18px;
   color: rgb(71, 71, 71);
 }
 
@@ -196,9 +196,9 @@ Indents the avatar, username, and tag correctly within the section
   border-radius: 8px;
 }
 p {
-    margin: 0;
-    padding: 0;
-    flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
 }
 
 /* 
@@ -280,8 +280,8 @@ bg img was causing weird visual splicing from improper margin spacing
 .sidehead {
   padding: 0px;
   padding-left: 2%;
-  color: #a85b14;
-  font-size: 1vw;
+  color: #634204;
+  font-size: 18px;
 }
 
 /* each individual 'hot topic' */
