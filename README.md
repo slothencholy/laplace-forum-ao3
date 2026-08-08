@@ -223,25 +223,126 @@ The last post in a thread, however, uses the 'lastreply' class as well as 'bodyr
                 </div>
             </div>
 ```
+Just like with posts, a thread can be used as many times as you want.
 
-All together, here is the format for a thread:
+In the event that a thread is only two posts, and the reply is both the first AND last reply, it should have the classes 'firstreply',
+'reply' and 'lastreply'.
+
+```
+            <div class="thread">
+
+                <div class="post firstthread">
+                    <div class="usersection">
+                        <div class="userindent firstcomment">
+                            <img src="character.jpg" class="avatar">
+                            <div class="userinfo">
+                                <div class="tag">ID</div>
+                                <div class="username">Username</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="body">
+                        <div class="innerbody">
+                            <div>I'm a thread with only one comment.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post firstreply reply lastreply">
+                    <div class="userreply ">
+                        <div class="userindent">
+                            <img src="character.jpg" class="avatar">
+
+                            <div class="userinfo">
+                                <div class="tag">ID</div>
+                                <div class="username">Username</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="innerbody">
+                            <div>I'm the last reply.</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+```
+
+## Full Code Blocks
+
+### First Post
+Before the title is a little link to a forum directory, in which you can write whatever you want:
+```
+            <div class="breadcrumb">
+                <div>Laplace &gt; ForumBranchHere</div>
+            </div>
+            <div class="card title post">
+                <div>[GeneralTopic] ActualTitle</div>
+            </div>
+            <div class="post mainpost">
+                <div class="usersection">
+                    <div class="userindent firstcomment">
+                        <img src="character.png" class="avatar">
+
+                        <div class="userinfo">
+                            <div class="tag">ID</div>
+                            <div class="username">Username</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="innerbody">
+                        <div>
+                            POSTBODY
+                        </div>
+                    </div>
+                </div>
+            </div>
+```
+
+### Standalone Post
+```
+            <div class="post mainpost">
+                <div class="usersection">
+                    <div class="userindent firstcomment">
+                        <img src="character.png" class="avatar">
+
+                        <div class="userinfo">
+                            <div class="tag">ID</div>
+                            <div class="username">Username</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="innerbody">
+                        <div>
+                            POSTBODY
+                        </div>
+                    </div>
+                </div>
+            </div>
+```
+
+### Thread
 ```
             <div class="thread">
                 <div class="post firstthread">
 
                     <div class="usersection">
                         <div class="userindent firstcomment">
-                            <img src="the-link-to-your-chosen-character.png" class="avatar">
+                            <img src="character.png" class="avatar">
                             <div class="userinfo">
-                                <div class="tag">ID:MEANINGLESS-BUT-OFFICIAL-LOOKING-TEXT</div>
-                                <div class="username">Forum Username</div>
+                                <div class="tag">ID</div>
+                                <div class="username">Username</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="body">
                         <div class="innerbody">
-                            <div>I'm an ordinary comment that other people commented under!</div>
+                            <div>THREADSTART</div>
                         </div>
                     </div>
                 </div>
@@ -251,17 +352,17 @@ All together, here is the format for a thread:
 
                     <div class="userreply">
                         <div class="userindent">
-                            <img src="the-link-to-your-chosen-character.png" class="avatar">
+                            <img src="character.png" class="avatar">
                             <div class="userinfo">
-                                <div class="tag">ID:MEANINGLESS-BUT-OFFICIAL-LOOKING-TEXT</div>
-                                <div class="username">Forum Username</div>
+                                <div class="tag">ID</div>
+                                <div class="username">Username</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="body">
                         <div class="innerbody">
-                            <div>I decided to comment to reply to the above post, and thus made it a thread!</div>
+                            <div>FIRSTREPLY</div>
                         </div>
                     </div>
                 </div>
@@ -270,35 +371,34 @@ All together, here is the format for a thread:
                 <div class="post bodyreply reply">
                     <div class="userreply">
                         <div class="userindent">
-                            <img src="the-link-to-your-chosen-character.png" class="avatar">
+                            <img src="character.png" class="avatar">
                             <div class="userinfo">
-                                <div class="tag">ID:MEANINGLESS-BUT-OFFICIAL-LOOKING-TEXT</div>
-                                <div class="username">Forum Username</div>
+                                <div class="tag">ID</div>
+                                <div class="username">Username</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="body">
                         <div class="innerbody">
-                            <div>I commented and made the thread longer. My classes are identical to the comment below!</div>
+                            <div>BODYREPLY</div>
                         </div>
                     </div>
                 </div>
 
-
                 <div class="post bodyreply reply">
-                    <div class="userreply ">
+                    <div class="userreply">
                         <div class="userindent">
-                            <img src="the-link-to-your-chosen-character.png" class="avatar">
+                            <img src="character.png" class="avatar">
                             <div class="userinfo">
-                                <div class="tag">ID:MEANINGLESS-BUT-OFFICIAL-LOOKING-TEXT</div>
-                                <div class="username">Forum Username</div>
+                                <div class="tag">ID</div>
+                                <div class="username">Username</div>
                             </div>
                         </div>
                     </div>
                     <div class="body">
                         <div class="innerbody">
-                            <div>You can duplicate my surrounding div block as many times as you want within the thread!</div>
+                            <div>BLOCKREPLY</div>
                         </div>
                     </div>
                 </div>
@@ -307,27 +407,27 @@ All together, here is the format for a thread:
 
                     <div class="userreply ">
                         <div class="userindent">
-                            <img src="the-link-to-your-chosen-character.png" class="avatar">
+                            <img src="character.png" class="avatar">
                             <div class="userinfo">
-                                <div class="tag">ID:MEANINGLESS-BUT-OFFICIAL-LOOKING-TEXT</div>
-                                <div class="username">Forum Username</div>
+                                <div class="tag">ID</div>
+                                <div class="username">Username</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="body">
                         <div class="innerbody">
-                            <div>I'm the last reply in the thread, and have slightly different formatting from the other replies.</div>
+                            <div>LASTREPLY</div>
                         </div>
                     </div>
                 </div>
             </div>
 ```
-Just like with posts, a thread can be used as many times as you want.
 
 ## Other small details
 - Missing a closing `</div>` block somewhere can really mess up the formatting, so be careful!
-- The avatar file size is roughly 50px by 50px
+- The avatar file size is roughly 50px by 50px. Any image used as an avatar will be automatically resized.
+- The spacing can get slightly misaligned if the Username is long enough to wrap. To solve this I just made the font size smaller. There is a more elegant solution somewhere.
 - The css was created by cutting up images and using them as background elements...... I then decided to hardcode margins to space everything out properly.
 - I hate css.
 - I like writing a lot more. Go read my fic!
