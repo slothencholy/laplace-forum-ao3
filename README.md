@@ -430,4 +430,4 @@ Before the title is a little link to a forum directory, in which you can write w
 - The spacing can get slightly misaligned if the Username is long enough to wrap. To solve this I just made the font size smaller. There is a more elegant solution somewhere.
 - The css was created by cutting up images and using them as background elements...... I then decided to hardcode margins to space everything out properly.
 - I hate css.
-- I like writing a lot more. Go read my fic!
+- I like writing a lot more. Go read [my fic!](https://archiveofourown.org/works/90083486)
